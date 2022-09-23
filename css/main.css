@@ -356,9 +356,16 @@ header .badges .badge {
   margin-right: 20px;
 }
 .notice .notice-line .inner .inner__left .swiper {
-  background-color: orange;
   flex-grow: 1;
   height: 62px;
+}
+.notice .notice-line .inner .inner__left .swiper-slide {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+.notice .notice-line .inner .inner__left .swiper-slide a {
+  color: #fff;
 }
 .notice .notice-line .inner .inner__left .notice-line__more {
   /* 아이콘 중앙 정렬 위해 설정 */
@@ -398,6 +405,23 @@ header .badges .badge {
 .notice .notice-line .inner .inner__right .toggle-promotion .material-symbols-outlined {
   color: #333;
   font-size: 30px;
+}
+.notice .promotion {
+  height: 693px;
+  /* 밝은 베이지색 */
+  background-color: #f6f5ef;
+  position: relative;
+}
+.notice .promotion .swiper {
+  /* 수동으로 계산하다 틀릴 수 있으니 calc()함수를 종종 활용한다. */
+  width: calc(819px * 3 + 20px);
+  height: 553px;
+  background-color: orange;
+  text-align: center;
+  font-size: 200px;
+  /* 가운데 이미지가 계속 자기 자리를 유지할 수 있도록 */
+  position: absolute;
+  top: 40px;
 }
 
 
